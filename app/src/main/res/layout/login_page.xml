@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context=".MainActivity">
+    tools:context=".login_page">
 
     <ImageButton
         android:id="@+id/btnSpeak3"
@@ -31,7 +31,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/search"
+        android:id="@+id/login2"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="193dp"
         android:layout_height="64dp"
@@ -43,7 +43,7 @@
         tools:layout_editor_absoluteY="579dp" />
 
     <EditText
-        android:id="@+id/keywords_search"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -62,7 +62,7 @@
         tools:layout_editor_absoluteY="452dp" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

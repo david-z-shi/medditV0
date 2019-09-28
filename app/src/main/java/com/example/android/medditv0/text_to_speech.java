@@ -45,6 +45,20 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
 
     private Button normal_user;
 
+    String firstName;
+    String lastName;
+    String email;
+    String username;
+    String password;
+    int phone;
+    String s;
+    String cond;
+    String pref;
+    int a;
+    String prof;
+    String st;
+    String ct;
+
     //create the Activity
     public void onCreate(Bundle savedInstanceState) {
 
@@ -62,12 +76,11 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
         normal_user = (Button) findViewById(R.id.normal_user);
         normalClick();
 
-        // hide the action bar
         btnSpeak.setOnClickListener(this);
     }
 
     public void onClick(View v) {
-        promptSpeechInput();
+        tenQuestions();
     }
 
     public void normalClick() {
@@ -105,8 +118,13 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
         int speechStatus = myTTS.speak(speech, TextToSpeech.QUEUE_FLUSH, null, null);
     }
 
-    private void confirmNext() {
-
+    private boolean confirmNext() {
+        promptSpeechInput();
+        if (txtSpeechInput.getText().toString().equals("confirmed")) {
+            myTTS.speak("confirmed, next", TextToSpeech.QUEUE_FLUSH, null, null);
+            return true;
+        }
+        return false;
     }
 
     //act on result of TTS data check
@@ -149,6 +167,103 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
         }
         else if (initStatus == TextToSpeech.ERROR) {
             Toast.makeText(this, "Sorry! Text To Speech failed...", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void tenQuestions() {
+        switch (count) {
+            case 1:
+                myTTS.speak("What is your first name?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                firstName = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 2:
+                myTTS.speak("What is your last name?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                lastName = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 3:
+                myTTS.speak("What is your phone number?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                phone = Integer.parseInt(txtSpeechInput.getText().toString());
+
+                if (!confirmNext()) {
+                    break;
+                }
+            case 4:
+                myTTS.speak("What is your email?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                email = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 5:
+                myTTS.speak("What is your city?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                ct = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 6:
+                myTTS.speak("What is your state?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                st = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 7:
+                myTTS.speak("What is your condition?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                cond = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 8:
+                myTTS.speak("What is your preference?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                pref = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 9:
+                myTTS.speak("What is your sex?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                s = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 10:
+                myTTS.speak("What is your age?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                int a = Integer.parseInt(txtSpeechInput.getText().toString());
+                if (!confirmNext()) {
+                    break;
+                }
+            case 11:
+                myTTS.speak("What is your username?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                username = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 12:
+                myTTS.speak("What is your password?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                password = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
+            case 13:
+                myTTS.speak("What is your profile?", TextToSpeech.QUEUE_FLUSH, null, null);
+                promptSpeechInput();
+                prof = txtSpeechInput.getText().toString();
+                if (!confirmNext()) {
+                    break;
+                }
         }
     }
 }

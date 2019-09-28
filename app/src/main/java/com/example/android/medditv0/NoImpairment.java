@@ -67,6 +67,10 @@ public class NoImpairment extends AppCompatActivity {
                 String pref = lastName.getText().toString();
                 String cond = lastName.getText().toString();
 
+                String user = "";
+                String pw = "";
+                String profile = "";
+
                 User new_user = new User(fn, ln, a, s, cond, pref, pn, em, st, ct, user, pw, profile);
                 System.out.println("got here");
                 createUser(new_user);

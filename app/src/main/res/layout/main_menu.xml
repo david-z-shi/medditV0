@@ -31,7 +31,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/save2"
+        android:id="@+id/UpdateProfile"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="294dp"
         android:layout_height="64dp"
@@ -41,7 +41,7 @@
         tools:layout_editor_absoluteY="257dp" />
 
     <Button
-        android:id="@+id/Saved Matches"
+        android:id="@+id/SavedMatches"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="294dp"
         android:layout_height="64dp"
@@ -51,7 +51,7 @@
         tools:layout_editor_absoluteY="352dp" />
 
     <Button
-        android:id="@+id/saved Matches"
+        android:id="@+id/NewMatches"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="294dp"
         android:layout_height="64dp"
@@ -61,7 +61,7 @@
         tools:layout_editor_absoluteY="456dp" />
 
     <Button
-        android:id="@+id/saved Matches2"
+        android:id="@+id/Settings"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="294dp"
         android:layout_height="64dp"

@@ -25,17 +25,19 @@ public class update_user_preferences extends AppCompatActivity {
     private EditText profile;
     private Button save;
 
+    private String responseMessage;
+
     @Override
     protected  void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         Bundle bundle = getIntent().getExtras();
-        String firstName = bundle.getString("firstName");
-        String lastName = bundle.getString("lastName");
-        String email = bundle.getString("email");
-        String username = bundle.getString("username");
-        String password = bundle.getString("password");
-        int phone = bundle.getInt("phone");
+        final String firstName = bundle.getString("firstName");
+        final String lastName = bundle.getString("lastName");
+        final String email = bundle.getString("email");
+        final String username = bundle.getString("username");
+        final String password = bundle.getString("password");
+        final int phone = bundle.getInt("phone");
 
         city = (EditText) findViewById(R.id.city);
         sex = (EditText) findViewById(R.id.sex);
@@ -45,29 +47,26 @@ public class update_user_preferences extends AppCompatActivity {
         state = (EditText) findViewById(R.id.state);
         profile = (EditText) findViewById(R.id.profile);
 
-        String s = sex.toString();
-        String cond = conditions.toString();
-        String pref = preferences.toString();
-        int a = Integer.parseInt(age.toString());
-        String prof = profile.toString();
-        String st = state.toString();
-        String ct = city.toString();
-
-        User new_user = new User(firstName, lastName, a, s, cond, pref, phone,
-                email, st, ct, username, password, prof);
-
-        createUser(new_user);
+        final String s = sex.toString();
+        final String cond = conditions.toString();
+        final String pref = preferences.toString();
+        final int a = Integer.parseInt(age.toString());
+        final String prof = profile.toString();
+        final String st = state.toString();
+        final String ct = city.toString();
 
         save = (Button) findViewById(R.id.save);
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                User new_user = new User(firstName, lastName, a, s, cond, pref, phone,
+                        email, st, ct, username, password, prof);
+                String id = createUser(new_user);
             }
         });
     }
 
-    public void createUser(final User new_user) {
+    public String createUser(final User new_user) {
         MyAsyncTask aTask = new MyAsyncTask();
         aTask.setListener(new MyAsyncTask.MyAsyncTaskListener() {
             @Override
@@ -104,8 +103,10 @@ public class update_user_preferences extends AppCompatActivity {
                     wr.close();
 
                     int responseCode = myConnection.getResponseCode();
+                    responseMessage = myConnection.getResponseMessage();
                     System.out.println("\nSending 'GET' request to URL : " + webHost);
                     System.out.println("Response Code : " + responseCode);
+                    System.out.println("Response Message: " + responseMessage);
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
@@ -113,5 +114,6 @@ public class update_user_preferences extends AppCompatActivity {
                 }
             }
         });
+        return responseMessage;
     }
 }

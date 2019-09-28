@@ -41,7 +41,8 @@
         android:layout_height="51dp"
         android:clickable="true"
         android:src="?attr/actionModeCloseDrawable"
-        app:layout_constraintTop_toTopOf="@+id/appBarLayout2" />
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout2"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/btnSpeak5"
@@ -184,7 +185,7 @@
         android:layout_height="43dp"
         android:text="Update User Preferences"
         android:textColor="#1b91a1"
-        android:textSize="30"
+        android:textSize="30dp"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="76dp"
         tools:ignore="MissingConstraints" />

@@ -17,7 +17,8 @@
         android:scaleType="fitStart"
         android:src="@android:drawable/ic_btn_speak_now"
         tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="652dp" />
+        tools:layout_editor_absoluteY="652dp"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -26,7 +27,8 @@
         android:clickable="true"
         android:src="?attr/actionModeCloseDrawable"
         app:layout_constraintTop_toTopOf="@+id/appBarLayout2"
-        tools:layout_editor_absoluteX="-1dp" />
+        tools:layout_editor_absoluteX="-1dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/search"

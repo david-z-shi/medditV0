@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".text_to_speech">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="421dp"
+            android:layout_height="wrap_content"
+            android:background="#1b91a1"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="193dp"
+        android:layout_height="64dp"
+        android:text="CREATE ACCOUNT "
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="664dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="325dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="559dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="368dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text|textPassword"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="602dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="325dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="413dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="456dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:text="EMAIL"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="413dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:text="PHONE"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="457dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:text="Last Name"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="369dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:text="Password"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="603dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:text="First Name"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="325dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:text="Username"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="559dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:text="First Name"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="325dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="190dp"
+        android:layout_height="217dp"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="74dp"
+        tools:src="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:background="@android:drawable/ic_menu_edit"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="244dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

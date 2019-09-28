@@ -53,10 +53,13 @@
 
         <ImageButton
             android:id="@+id/btnSpeak"
-            android:layout_width="wrap_content"
+            android:layout_width="76dp"
             android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
             android:background="@null"
-            android:src="@drawable/baseline_mic_black_18dp" />
+            android:cropToPadding="true"
+            android:scaleType="fitStart"
+            android:src="@android:drawable/ic_btn_speak_now" />
 
         <TextView
             android:layout_width="wrap_content"

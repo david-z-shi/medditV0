@@ -4,20 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="#ffffff"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/mainButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to meddit!"
-        android:textSize="25dp"
         android:clickable="true"
-        android:id="@+id/mainButton"
+        android:focusable="true"
+        android:fontFamily="Montserrat"
+        android:text="meddit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#1b91a1"
+        android:textSize="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:focusable="true" />
+        app:layout_constraintVertical_bias="0.152" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

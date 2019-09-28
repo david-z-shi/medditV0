@@ -7,6 +7,17 @@
     android:background="#ffffff"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:text="Generate Matches"
+        android:textColor="#1b91a1"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="250dp" />
+
     <ImageButton
         android:id="@+id/btnSpeak3"
         android:layout_width="76dp"
@@ -16,8 +27,9 @@
         android:cropToPadding="true"
         android:scaleType="fitStart"
         android:src="@android:drawable/ic_btn_speak_now"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="652dp" />
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="522dp"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -26,7 +38,8 @@
         android:clickable="true"
         android:src="?attr/actionModeCloseDrawable"
         app:layout_constraintTop_toTopOf="@+id/appBarLayout2"
-        tools:layout_editor_absoluteX="-1dp" />
+        tools:layout_editor_absoluteX="-1dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/search"
@@ -34,11 +47,11 @@
         android:layout_width="193dp"
         android:layout_height="64dp"
         android:background="#D81B60"
-        android:text="LOGIN"
+        android:text="match me!"
         android:textColor="#ffffff"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="579dp" />
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="436dp" />
 
     <EditText
         android:id="@+id/keywords_search"
@@ -47,36 +60,17 @@
         android:ems="10"
         android:inputType="text"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="452dp" />
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="367dp" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="133dp"
         android:layout_height="44dp"
-        android:text="Username"
+        android:text="keywords"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="452dp" />
-
-    <EditText
-        android:id="@+id/editText10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text|textPassword"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="495dp" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="133dp"
-        android:layout_height="44dp"
-        android:text="Password"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="496dp" />
+        tools:layout_editor_absoluteY="367dp" />
 
     <TextView
         android:id="@+id/mainButton"
@@ -88,20 +82,21 @@
         android:text="meddit"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#1b91a1"
-        android:textSize="60dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.237" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="290dp"
-        android:layout_height="434dp"
+        android:layout_width="165dp"
+        android:layout_height="274dp"
         app:srcCompat="@drawable/meddit_logo"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="-46dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="-57dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

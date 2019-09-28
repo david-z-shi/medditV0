@@ -1,5 +1,4 @@
 package com.example.android.medditv0;
-
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;

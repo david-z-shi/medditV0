@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -42,14 +41,11 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
         checkTTSIntent.setAction(TextToSpeech.Engine.ACTION_CHECK_TTS_DATA);
         startActivityForResult(checkTTSIntent, MY_DATA_CHECK_CODE);
 
-
         //Speech to text stuff
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
 
         // hide the action bar
-//        getActionBar().hide();
-        speakWords(welcome);
         btnSpeak.setOnClickListener(this);
     }
 
@@ -79,7 +75,6 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
 
     //speak the user text
     private void speakWords(String speech) {
-
         //speak straight away
         myTTS.speak(speech, TextToSpeech.QUEUE_FLUSH, null);
     }

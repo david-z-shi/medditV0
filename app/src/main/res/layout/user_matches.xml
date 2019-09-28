@@ -2,73 +2,77 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinatorLayout"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".text_to_speech">
-
+    android:orientation="vertical"
+    android:visibility="visible" >
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="342dp"
-        android:layout_height="0dp"
-        android:text="Your Top Matches"
+        android:id="@+id/textView8"
+        android:layout_width="201dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="32dp"
+        android:text="New Matches"
         android:textColor="#1b91a1"
         android:textSize="30"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="56dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="51dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="272dp"
-        android:layout_height="604dp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="91dp"
+        android:layout_height="51dp"
         android:clickable="true"
-        android:hapticFeedbackEnabled="true"
-        android:scrollbars="vertical"
-        app:fastScrollEnabled="true"
-        tools:layout_editor_absoluteY="111dp">
-
-    </androidx.recyclerview.widget.RecyclerView>
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout2" />
 
     <ImageButton
-        android:id="@+id/imageButton15"
-        android:layout_width="98dp"
-        android:layout_height="101dp"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="140dp"
-        tools:src="@tools:sample/avatars" />
+        android:id="@+id/imageButton28"
+        android:layout_width="108dp"
+        android:layout_height="112dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="350dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
-        android:layout_width="98dp"
-        android:layout_height="101dp"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="248dp"
-        tools:src="@tools:sample/avatars" />
+        android:id="@+id/imageButton31"
+        android:layout_width="108dp"
+        android:layout_height="112dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="109dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/imageButton18"
-        android:layout_width="98dp"
-        android:layout_height="101dp"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="359dp"
-        tools:src="@tools:sample/avatars" />
+        android:id="@+id/imageButton32"
+        android:layout_width="108dp"
+        android:layout_height="112dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="109dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/imageButton19"
-        android:layout_width="98dp"
-        android:layout_height="101dp"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="471dp"
-        tools:src="@tools:sample/avatars" />
+        android:id="@+id/imageButton33"
+        android:layout_width="108dp"
+        android:layout_height="112dp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="109dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
-        android:id="@+id/imageButton20"
-        android:layout_width="98dp"
-        android:layout_height="101dp"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="580dp"
-        tools:src="@tools:sample/avatars" />
+        android:id="@+id/imageButton34"
+        android:layout_width="108dp"
+        android:layout_height="112dp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="231dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
+    <ImageButton
+        android:id="@+id/imageButton35"
+        android:layout_width="108dp"
+        android:layout_height="112dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="231dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

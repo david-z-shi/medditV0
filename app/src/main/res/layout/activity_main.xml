@@ -41,6 +41,7 @@
         android:layout_height="434dp"
         app:srcCompat="@drawable/meddit_logo"
         tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="-46dp" />
+        tools:layout_editor_absoluteY="-46dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,17 +8,6 @@
     tools:context=".text_to_speech">
 
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="342dp"
-        android:layout_height="43dp"
-        android:text="Create New Account"
-        android:textColor="#1b91a1"
-        android:textSize="30"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="76dp"
-        tools:ignore="MissingConstraints" />
-
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout2"
         android:layout_width="wrap_content"
@@ -41,10 +30,10 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="193dp"
         android:layout_height="64dp"
-        android:text="CREATE ACCOUNT "
+        android:text="SAVE"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="664dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="664dp" />
 
     <EditText
         android:id="@+id/editText"
@@ -54,17 +43,7 @@
         android:inputType="text"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="352dp" />
-
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="559dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="178dp" />
 
     <EditText
         android:id="@+id/editText3"
@@ -74,17 +53,17 @@
         android:inputType="text"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="395dp" />
+        tools:layout_editor_absoluteY="222dp" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/editText6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text|textPassword"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="602dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="134dp" />
 
     <EditText
         android:id="@+id/editText2"
@@ -94,7 +73,7 @@
         android:inputType="textEmailAddress"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="440dp" />
+        tools:layout_editor_absoluteY="267dp" />
 
     <EditText
         android:id="@+id/editText4"
@@ -104,78 +83,101 @@
         android:inputType="phone"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="485dp" />
+        tools:layout_editor_absoluteY="319dp" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="363dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="133dp"
         android:layout_height="44dp"
-        android:text="EMAIL"
+        android:text="AGE"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="440dp" />
+        tools:layout_editor_absoluteY="267dp" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="133dp"
         android:layout_height="44dp"
-        android:text="PHONE"
+        android:text="Condition"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="484dp" />
+        tools:layout_editor_absoluteY="320dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:text="Preference"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="364dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="133dp"
         android:layout_height="44dp"
-        android:text="Last Name"
+        android:text="Biological SEX"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="396dp" />
+        tools:layout_editor_absoluteY="223dp" />
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="133dp"
-        android:layout_height="44dp"
-        android:text="Password"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="603dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_width="177dp"
+        android:layout_height="47dp"
+        android:text="Profile Summary"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="419dp" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="133dp"
         android:layout_height="44dp"
-        android:text="First Name"
+        android:text="State"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="352dp" />
+        tools:layout_editor_absoluteY="178dp" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button7"
         android:layout_width="133dp"
         android:layout_height="44dp"
-        android:text="Username"
+        android:text="City"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="559dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="134dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="190dp"
-        android:layout_height="217dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="119dp"
-        tools:src="@tools:sample/avatars" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="342dp"
+        android:layout_height="43dp"
+        android:text="Update User Preferences"
+        android:textColor="#1b91a1"
+        android:textSize="30"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="76dp" />
 
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="45dp"
-        android:layout_height="38dp"
-        android:background="@android:drawable/ic_menu_edit"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="298dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="339dp"
+        android:layout_height="172dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="476dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:hint="Tell other users about yourself." />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

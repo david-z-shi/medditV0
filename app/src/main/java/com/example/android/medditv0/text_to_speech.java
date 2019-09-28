@@ -32,6 +32,8 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
     //status check code
     private int MY_DATA_CHECK_CODE = 0;
 
+    private int count = 0;
+
     private final String welcome = "Welcome to meddit";
     private final String firstQuestion = "Do you want to enter voice entry mode?";
     private final String answer = "undefined";
@@ -100,7 +102,11 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
     //speak the user text
     private void speakWords(String speech) {
         //speak straight away
-        myTTS.speak(speech, TextToSpeech.QUEUE_FLUSH, null);
+        int speechStatus = myTTS.speak(speech, TextToSpeech.QUEUE_FLUSH, null, null);
+    }
+
+    private void confirmNext() {
+
     }
 
     //act on result of TTS data check
@@ -132,7 +138,6 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
 
         }
     }
-
 
 
     //setup TTS

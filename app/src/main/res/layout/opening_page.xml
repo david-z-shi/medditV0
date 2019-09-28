@@ -20,7 +20,7 @@
         tools:layout_editor_absoluteY="548dp" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/login"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="193dp"
         android:layout_height="64dp"

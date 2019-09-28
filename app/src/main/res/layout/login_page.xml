@@ -29,7 +29,7 @@
         tools:layout_editor_absoluteX="-1dp" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/login"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="193dp"
         android:layout_height="64dp"
@@ -41,7 +41,7 @@
         tools:layout_editor_absoluteY="579dp" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -60,7 +60,7 @@
         tools:layout_editor_absoluteY="452dp" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

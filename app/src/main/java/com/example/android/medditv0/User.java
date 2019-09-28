@@ -24,10 +24,17 @@ public class User {
     private String state;
     private String city;
 
+    private String username;
+    private String password;
+    private String profile;
+
     private final String USER_AGENT = "meddit_V0";
 
 
-    public User(String firstName, String lastName, int age, String sex, String medicalConditions, String preferences, int phone,String email,String state,String city ) {
+    public User(String firstName, String lastName, int age, String sex,
+                String medicalConditions, String preferences, int phone,
+                String email,String state,String city, String username,
+                String password, String profile) {
         this.firstName=firstName;
         this.lastName=lastName;
         this.age = age;
@@ -38,6 +45,9 @@ public class User {
         this.email=email;
         this.city=city;
         this.state=state;
+        this.username = username;
+        this.password=  password;
+        this.profile = profile;
     }
     public User(){
         //Dummy Method
@@ -55,6 +65,9 @@ public class User {
     public String getEmail(){return this.email;}
     public String getCity(){return this.city;}
     public String getState(){return this.state;}
+    public String getUsername() {return this.username;}
+    public String getPassword() {return this.password;}
+    public String getProfile() {return this.profile;}
 
     public String getMedicalConditions() { return this.medicalConditions; }
     public String getPreferences() {
@@ -67,16 +80,16 @@ public class User {
     {
         return "{\"First Name\":\"" + getFirstName()
                 + "\", \"Last Name:\"" + getLastName()
-                + "\", \"Age:\"" + getAge()
-                + "\", \"Sex:\"" + getSex()
-                + "\", \"City:\"" + getCity()
-                + "\", \"State:\"" + getState()
-                + "\", \"Condition:\"" + getMedicalConditions()
-                + "\", \"Preferences:\"" + getPreferences()
-                + "\", \"Phone:\"" + getPhone()
-                + "\", \"Email:\"" + getEmail()
-                + "\", \"Personal:\"" + false
-                + "\", \"Medical:\"" + true
+                + "\", \"Age\":" + getAge()
+                + "\", \"Sex\":" + getSex()
+                + "\", \"City\":" + getCity()
+                + "\", \"State\":" + getState()
+                + "\", \"Condition\":" + getMedicalConditions()
+                + "\", \"Preferences\":" + getPreferences()
+                + "\", \"Phone\":" + getPhone()
+                + "\", \"Email\":" + getEmail()
+                + "\", \"Personal\":" + false
+                + ", \"Medical\":" + true
                 + "}";
     }
 }

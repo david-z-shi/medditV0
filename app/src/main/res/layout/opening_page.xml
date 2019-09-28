@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/createButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="193dp"
         android:layout_height="64dp"
@@ -32,7 +32,7 @@
         tools:layout_editor_absoluteY="470dp" />
 
     <TextView
-        android:id="@+id/mainButton"
+        android:id="@+id/medditName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"

@@ -15,13 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.opening_page);
         mainButton = (TextView) findViewById(R.id.mainButton);
+
         Process();
     }
 
     private void Process() {
         mainButton.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v){
-                Intent intent = new Intent(MainActivity.this, text_to_speech.class);
+                Intent intent = new Intent(MainActivity.this, create_new_user.class);
                 startActivity(intent);
             }
         });

@@ -1,25 +1,33 @@
 package com.example.android.medditv0;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import android.util.JsonReader;
+
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import javax.net.ssl.HttpsURLConnection;
 
 
 public class User {
     private String firstName;
     private String lastName;
     private int age;
-    private ArrayList<String> medicalConditions = new ArrayList<String>();
-    private ArrayList<String> preferences = new ArrayList<String>();
+    private String medicalConditions;
+    private String preferences;
     private String sex;
     private int phone;
-    private string email;
-    boolean medical;
-    boolean personal;
+    private String email;
     private String state;
     private String city;
 
-    public User(String firstName, String lastName, int age, String sex, ArrayList<String> medicalConditions, ArrayList<String> preferences, int phone,string email,String state,String city  ) {
+    private final String USER_AGENT = "meddit_V0";
+
+
+    public User(String firstName, String lastName, int age, String sex, String medicalConditions, String preferences, int phone,String email,String state,String city ) {
         this.firstName=firstName;
         this.lastName=lastName;
         this.age = age;
@@ -31,9 +39,9 @@ public class User {
         this.city=city;
         this.state=state;
     }
-public User(){
-    //TODO: Read from text file
-}
+    public User(){
+        //Dummy Method
+    }
 
     public int getAge() {
         return this.age;
@@ -48,10 +56,27 @@ public User(){
     public String getCity(){return this.city;}
     public String getState(){return this.state;}
 
-    public ArrayList<String> getMedicalConditions() { return this.medicalConditions; }
-    public ArrayList<String> getPreferences() {
+    public String getMedicalConditions() { return this.medicalConditions; }
+    public String getPreferences() {
         return this.preferences;
     }
 
-
+    // Creating toString
+    @Override
+    public String toString()
+    {
+        return "{\"First Name\":\"" + getFirstName()
+                + "\", \"Last Name:\"" + getLastName()
+                + "\", \"Age:\"" + getAge()
+                + "\", \"Sex:\"" + getSex()
+                + "\", \"City:\"" + getCity()
+                + "\", \"State:\"" + getState()
+                + "\", \"Condition:\"" + getMedicalConditions()
+                + "\", \"Preferences:\"" + getPreferences()
+                + "\", \"Phone:\"" + getPhone()
+                + "\", \"Email:\"" + getEmail()
+                + "\", \"Personal:\"" + false
+                + "\", \"Medical:\"" + true
+                + "}";
+    }
 }

@@ -55,8 +55,7 @@
             android:id="@+id/normal_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="blue"
-            android:text="@string/normaluser"/>
+            android:text="@string/normaluser" />
 
         <ImageButton
             android:id="@+id/btnSpeak"

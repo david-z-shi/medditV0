@@ -8,6 +8,7 @@ import android.speech.tts.TextToSpeech;
 import android.speech.tts.TextToSpeech.OnInitListener;
 import android.util.JsonReader;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +41,8 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
     private ImageButton btnSpeak;
     private final int REQ_CODE_SPEECH_INPUT = 100;
 
+    private Button normal_user;
+
     //create the Activity
     public void onCreate(Bundle savedInstanceState) {
 
@@ -54,6 +57,8 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
         //Speech to text stuff
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
+        normal_user = (Button) findViewById(R.id.normal_user);
+        normalClick();
 
         // hide the action bar
         btnSpeak.setOnClickListener(this);
@@ -61,6 +66,15 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
 
     public void onClick(View v) {
         promptSpeechInput();
+    }
+
+    public void normalClick() {
+        normal_user.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View v){
+                Intent intent = new Intent(text_to_speech.this, NoImpairment.class);
+                startActivity(intent);
+            }
+        });
     }
 
     /**
@@ -119,6 +133,8 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
         }
     }
 
+
+
     //setup TTS
     public void onInit(int initStatus) {
         //check for successful instantiation
@@ -128,64 +144,6 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
         }
         else if (initStatus == TextToSpeech.ERROR) {
             Toast.makeText(this, "Sorry! Text To Speech failed...", Toast.LENGTH_LONG).show();
-        }
-    }
-
-
-    public void createUser() {
-        MyAsyncTask aTask = new MyAsyncTask();
-        aTask.setListener(new MyAsyncTask.MyAsyncTaskListener() {
-            @Override
-            public void onPreExecuteConcluded() {
-                // gui stuff
-
-            }
-
-            @Override
-            public void onPostExecuteConcluded(String result) {
-                // gui stuff
-
-            }
-        });
-        aTask.execute(new Runnable() {
-            @Override
-            public void run() {
-                URL webHost = null;
-                try {
-                    webHost = new URL("35.194.75.168");
-                    HttpsURLConnection myConnection = (HttpsURLConnection) webHost.openConnection();
-                    if (myConnection.getResponseCode() == 200) {
-                        // Success
-                        // Further processing here
-                        getUser(myConnection);
-                    } else {
-                        // Error handling code goes here
-                    }
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-    }
-
-    public void getUser(HttpsURLConnection myConnection) throws IOException {
-        InputStream responseBody = myConnection.getInputStream();
-        InputStreamReader responseBodyReader =
-                new InputStreamReader(responseBody, "UTF-8");
-        JsonReader jsonReader = new JsonReader(responseBodyReader);
-        jsonReader.beginObject(); // Start processing the JSON object
-        while (jsonReader.hasNext()) { // Loop through all keys
-            String key = jsonReader.nextName(); // Fetch the next key
-            if (key.equals("test")) { // Check if desired key
-                // Fetch the value as a String
-                String value = jsonReader.nextString();
-                System.out.println(value);
-                break; // Break out of the loop
-            } else {
-                jsonReader.skipValue(); // Skip values of other keys
-            }
         }
     }
 }

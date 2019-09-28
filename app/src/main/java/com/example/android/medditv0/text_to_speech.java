@@ -6,12 +6,23 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.TextToSpeech.OnInitListener;
+import android.util.JsonReader;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Locale;
+
+import javax.net.ssl.HttpsURLConnection;
 
 public class text_to_speech extends Activity implements View.OnClickListener, OnInitListener {
 
@@ -69,7 +80,7 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
                     getString(R.string.speech_not_supported),
                     Toast.LENGTH_SHORT).show();
         }
-        speakWords(firstQuestion);
+        //speakWords(firstQuestion);
     }
 
     //speak the user text
@@ -117,6 +128,64 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
         }
         else if (initStatus == TextToSpeech.ERROR) {
             Toast.makeText(this, "Sorry! Text To Speech failed...", Toast.LENGTH_LONG).show();
+        }
+    }
+
+
+    public void createUser() {
+        MyAsyncTask aTask = new MyAsyncTask();
+        aTask.setListener(new MyAsyncTask.MyAsyncTaskListener() {
+            @Override
+            public void onPreExecuteConcluded() {
+                // gui stuff
+
+            }
+
+            @Override
+            public void onPostExecuteConcluded(String result) {
+                // gui stuff
+
+            }
+        });
+        aTask.execute(new Runnable() {
+            @Override
+            public void run() {
+                URL webHost = null;
+                try {
+                    webHost = new URL("35.194.75.168");
+                    HttpsURLConnection myConnection = (HttpsURLConnection) webHost.openConnection();
+                    if (myConnection.getResponseCode() == 200) {
+                        // Success
+                        // Further processing here
+                        getUser(myConnection);
+                    } else {
+                        // Error handling code goes here
+                    }
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    public void getUser(HttpsURLConnection myConnection) throws IOException {
+        InputStream responseBody = myConnection.getInputStream();
+        InputStreamReader responseBodyReader =
+                new InputStreamReader(responseBody, "UTF-8");
+        JsonReader jsonReader = new JsonReader(responseBodyReader);
+        jsonReader.beginObject(); // Start processing the JSON object
+        while (jsonReader.hasNext()) { // Loop through all keys
+            String key = jsonReader.nextName(); // Fetch the next key
+            if (key.equals("test")) { // Check if desired key
+                // Fetch the value as a String
+                String value = jsonReader.nextString();
+                System.out.println(value);
+                break; // Break out of the loop
+            } else {
+                jsonReader.skipValue(); // Skip values of other keys
+            }
         }
     }
 }

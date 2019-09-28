@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context=".MainActivity">
+    tools:context=".opening_page">
 
     <Button
         android:id="@+id/createButton"
@@ -20,7 +20,7 @@
         tools:layout_editor_absoluteY="548dp" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/loginpage"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="193dp"
         android:layout_height="64dp"

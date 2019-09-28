@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context=".MainActivity">
+    tools:context=".login_page">
 
     <ImageButton
         android:id="@+id/btnSpeak3"
@@ -29,7 +29,7 @@
         tools:layout_editor_absoluteX="-1dp" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/login2"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="193dp"
         android:layout_height="64dp"

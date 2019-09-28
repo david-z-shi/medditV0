@@ -10,16 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".create_new_user"></activity>
+        <activity android:name=".main_menu"/>
+        <activity android:name=".login_page" />
+        <activity android:name=".create_new_user" />
         <activity android:name=".NoImpairment" />
+
         <activity
             android:name=".text_to_speech"
             android:label="@string/title_activity_text_to_speech"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".opening_page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

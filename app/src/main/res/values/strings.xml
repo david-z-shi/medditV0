@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">medditV0</string>
+    <string name="title_activity_text_to_speech">text_to_speech</string>
 </resources>

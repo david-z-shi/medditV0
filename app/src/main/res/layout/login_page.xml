@@ -7,6 +7,27 @@
     android:background="#ffffff"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/btnSpeak3"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:scaleType="fitStart"
+        android:src="@android:drawable/ic_btn_speak_now"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="652dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="91dp"
+        android:layout_height="51dp"
+        android:clickable="true"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout2"
+        tools:layout_editor_absoluteX="-1dp" />
+
     <Button
         android:id="@+id/button15"
         style="@style/Widget.AppCompat.Button.Colored"

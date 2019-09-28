@@ -8,6 +8,21 @@
     tools:context=".text_to_speech">
 
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="421dp"
+        android:layout_height="wrap_content"
+        android:background="#1b91a1"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="91dp"
+        android:layout_height="51dp"
+        android:clickable="true"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout2" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="342dp"

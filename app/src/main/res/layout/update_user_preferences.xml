@@ -35,6 +35,26 @@
         tools:layout_editor_absoluteX="109dp"
         tools:layout_editor_absoluteY="664dp" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="91dp"
+        android:layout_height="51dp"
+        android:clickable="true"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout2" />
+
+    <ImageButton
+        android:id="@+id/btnSpeak5"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:scaleType="fitStart"
+        android:src="@android:drawable/ic_btn_speak_now"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="652dp" />
+
     <EditText
         android:id="@+id/state"
         android:layout_width="wrap_content"

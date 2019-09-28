@@ -186,13 +186,15 @@
         android:textColor="#1b91a1"
         android:textSize="30"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="76dp" />
+        tools:layout_editor_absoluteY="76dp"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="339dp"
         android:layout_height="172dp"
         tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="476dp">
+        tools:layout_editor_absoluteY="476dp"
+        tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/profile"

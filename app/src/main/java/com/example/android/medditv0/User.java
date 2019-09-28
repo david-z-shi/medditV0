@@ -56,12 +56,13 @@ public class User {
     public int getAge() {
         return this.age;
     }
+    public int getPhone(){return this.phone;}
+
     public String getSex() {
         return this.sex;
     }
     public String getFirstName(){return this.firstName;}
     public String getLastName(){return this.lastName;}
-    public int getPhone(){return this.phone;}
     public String getEmail(){return this.email;}
     public String getCity(){return this.city;}
     public String getState(){return this.state;}

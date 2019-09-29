@@ -42,7 +42,7 @@ public class update_user_preferences extends AppCompatActivity {
         final String email = bundle.getString("email");
         final String username = bundle.getString("username");
         final String password = bundle.getString("password");
-        final int phone = bundle.getInt("phone");
+        final String phone = bundle.getString("phone");
 
         city = (EditText) findViewById(R.id.city);
         sex = (EditText) findViewById(R.id.sex);
@@ -55,7 +55,7 @@ public class update_user_preferences extends AppCompatActivity {
         final String s = sex.toString();
         final String cond = conditions.toString();
         final String pref = preferences.toString();
-        final int a = Integer.parseInt(age.toString());
+        final String a = age.toString();
         final String prof = profile.toString();
         final String st = state.toString();
         final String ct = city.toString();

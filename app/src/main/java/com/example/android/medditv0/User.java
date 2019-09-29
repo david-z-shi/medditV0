@@ -15,11 +15,11 @@ import javax.net.ssl.HttpsURLConnection;
 public class User {
     private String firstName;
     private String lastName;
-    private int age;
+    private String age;
     private String medicalConditions;
     private String preferences;
     private String sex;
-    private int phone;
+    private String phone;
     private String email;
     private String state;
     private String city;
@@ -31,8 +31,8 @@ public class User {
     private final String USER_AGENT = "meddit_V0";
 
 
-    public User(String firstName, String lastName, int age, String sex,
-                String medicalConditions, String preferences, int phone,
+    public User(String firstName, String lastName, String age, String sex,
+                String medicalConditions, String preferences, String phone,
                 String email,String state,String city, String username,
                 String password, String profile) {
         this.firstName=firstName;
@@ -53,10 +53,10 @@ public class User {
         //Dummy Method
     }
 
-    public int getAge() {
+    public String getAge() {
         return this.age;
     }
-    public int getPhone(){return this.phone;}
+    public String getPhone(){return this.phone;}
 
     public String getSex() {
         return this.sex;

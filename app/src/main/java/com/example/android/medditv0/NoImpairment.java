@@ -57,9 +57,9 @@ public class NoImpairment extends AppCompatActivity {
             public void onClick (View v){
                 String fn = firstName.getText().toString();
                 String ln = lastName.getText().toString();
-                int a = Integer.parseInt(age.getText().toString());
+                String a = age.toString();
                 String s = sex.getText().toString();
-                int pn = Integer.parseInt(phone.getText().toString());
+                String pn = phone.toString();
                 String em = email.getText().toString();
                 String st = state.getText().toString();
                 String ct = city.getText().toString();

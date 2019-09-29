@@ -43,7 +43,7 @@ public class create_new_user extends AppCompatActivity {
                 Intent intent = new Intent(create_new_user.this, update_user_preferences.class);
                 intent.putExtra("firstName", firstName.toString());
                 intent.putExtra("lastName", lastName.toString());
-                intent.putExtra("phone", Integer.parseInt(phone.toString()));
+                intent.putExtra("phone", phone.toString());
                 intent.putExtra("email", email.toString());
                 intent.putExtra("username", username.toString());
                 intent.putExtra("password", password.toString());

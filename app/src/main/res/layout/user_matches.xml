@@ -37,12 +37,6 @@
         android:id="@+id/imageButton28"
         android:layout_width="108dp"
         android:layout_height="112dp"
-<<<<<<< HEAD
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="350dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="MissingConstraints" />
-=======
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
@@ -50,7 +44,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.373"
         tools:srcCompat="@tools:sample/avatars" />
->>>>>>> ea9b6914fb568ba8737e41b771c4af15a73891cc
 
     <ImageButton
         android:id="@+id/imageButton31"
@@ -81,10 +74,6 @@
         android:id="@+id/imageButton33"
         android:layout_width="108dp"
         android:layout_height="112dp"
-<<<<<<< HEAD
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="109dp"
-        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageButton
         android:id="@+id/imageButton34"
@@ -94,7 +83,6 @@
         tools:layout_editor_absoluteY="231dp"
         tools:srcCompat="@tools:sample/avatars"
         tools:ignore="MissingConstraints" />
-=======
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
@@ -102,18 +90,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.99"
         tools:srcCompat="@tools:sample/avatars" />
->>>>>>> ea9b6914fb568ba8737e41b771c4af15a73891cc
 
     <ImageButton
         android:id="@+id/imageButton35"
         android:layout_width="108dp"
         android:layout_height="112dp"
-<<<<<<< HEAD
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="231dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="MissingConstraints" />
-=======
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,6 +103,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.578"
         tools:srcCompat="@tools:sample/avatars" />
->>>>>>> ea9b6914fb568ba8737e41b771c4af15a73891cc
 
 </androidx.constraintlayout.widget.ConstraintLayout>

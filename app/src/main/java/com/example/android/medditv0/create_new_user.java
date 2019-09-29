@@ -6,7 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class create_new_user extends AppCompatActivity {
@@ -17,7 +20,7 @@ public class create_new_user extends AppCompatActivity {
     private Button createAccount;
     private EditText username;
     private EditText password;
-    private Button restart;
+    private ImageButton restart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class create_new_user extends AppCompatActivity {
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
-        restart = (Button) findViewById(R.id.floatingActionButton4);
+        restart = (ImageButton) findViewById(R.id.floatingActionButton4);
         createAccount = (Button) findViewById(R.id.createAccount);
 
         createAccount.setOnClickListener(new View.OnClickListener() {

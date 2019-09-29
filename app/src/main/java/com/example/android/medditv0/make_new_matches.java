@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -22,7 +23,7 @@ public class make_new_matches extends AppCompatActivity {
     private Button search;
     private EditText keywords_search;
     private String return_val;
-    private Button back_home;
+    private ImageButton back_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,7 @@ public class make_new_matches extends AppCompatActivity {
         setContentView(R.layout.make_new_matches);
         search = (Button) findViewById(R.id.search);
         keywords_search = (EditText) findViewById(R.id.keywords_search);
-        back_home = (Button) findViewById(R.id.back_home);
+        back_home = (ImageButton) findViewById(R.id.back_home);
 
         search.setOnClickListener(new View.OnClickListener() {
             @Override

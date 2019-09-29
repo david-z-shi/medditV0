@@ -8,14 +8,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".NoImpairment"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".make_new_matches"></activity>
+        <activity android:name=".main_menu" />
+        <activity android:name=".login_page" />
+        <activity android:name=".create_new_user" />
+        <activity android:name=".update_user_preferences" />
+
+        <activity android:name=".NoImpairment" />
         <activity
             android:name=".text_to_speech"
             android:label="@string/title_activity_text_to_speech"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".opening_page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

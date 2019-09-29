@@ -1,5 +1,6 @@
 package com.example.android.medditv0;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,7 @@ public class update_user_preferences extends AppCompatActivity {
     private EditText age;
     private EditText profile;
     private Button save;
-
+    private Button home;
     private String responseMessage;
 
     @Override
@@ -33,6 +34,9 @@ public class update_user_preferences extends AppCompatActivity {
         setContentView(R.layout.update_user_preferences);
 
         Bundle bundle = getIntent().getExtras();
+        home = (Button) findViewById(R.id.floatingActionButton6);
+
+
         final String firstName = bundle.getString("firstName");
         final String lastName = bundle.getString("lastName");
         final String email = bundle.getString("email");
@@ -63,6 +67,15 @@ public class update_user_preferences extends AppCompatActivity {
                 User new_user = new User(firstName, lastName, a, s, cond, pref, phone,
                         email, st, ct, username, password, prof);
                 String id = createUser(new_user);
+                Intent intent = new Intent(update_user_preferences.this, main_menu.class);
+                startActivity(intent);
+            }
+        });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(update_user_preferences.this, main_menu.class);
+                startActivity(intent);
             }
         });
     }

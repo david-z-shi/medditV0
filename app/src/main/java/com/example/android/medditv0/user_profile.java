@@ -13,10 +13,22 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class user_profile extends AppCompatActivity{
+public class user_profile extends AppCompatActivity {
+    private Button home;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.individual_profile);
+
+        home = (Button) findViewById(R.id.floatingActionButton2);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(user_profile.this, main_menu.class);
+                startActivity(intent);
+            }
+        });
     }
 }

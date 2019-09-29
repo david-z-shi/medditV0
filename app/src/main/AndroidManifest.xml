@@ -15,8 +15,9 @@
         <activity android:name=".login_page" />
         <activity android:name=".create_new_user" />
         <activity android:name=".update_user_preferences" />
-
+        <activity android:name=".user_matches" />
         <activity android:name=".NoImpairment" />
+        <activity android:name=".user_profile" />
         <activity
             android:name=".text_to_speech"
             android:label="@string/title_activity_text_to_speech"

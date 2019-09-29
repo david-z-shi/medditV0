@@ -34,7 +34,7 @@ public class main_menu extends AppCompatActivity {
         SavedMatches.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(main_menu.this, update_user_preferences.class);
+                Intent intent = new Intent(main_menu.this, user_matches.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +42,7 @@ public class main_menu extends AppCompatActivity {
         NewMatches.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(main_menu.this, update_user_preferences.class);
+                Intent intent = new Intent(main_menu.this, make_new_matches.class);
                 startActivity(intent);
             }
         });

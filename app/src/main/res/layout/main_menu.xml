@@ -19,17 +19,22 @@
         android:src="@android:drawable/ic_btn_speak_now"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/UpdateProfile"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.096"
         tools:ignore="MissingConstraints"
         tools:src="@tools:sample/avatars" />
 
@@ -39,11 +44,12 @@
         android:layout_width="294dp"
         android:layout_height="64dp"
         android:text="Update Profile"
-        app:layout_constraintBottom_toTopOf="@+id/SavedMatches"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.844"
+        app:layout_constraintVertical_bias="0.428"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -52,12 +58,12 @@
         android:layout_width="294dp"
         android:layout_height="64dp"
         android:text="Saved Matches"
-        app:layout_constraintBottom_toTopOf="@+id/NewMatches"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.922"
+        app:layout_constraintVertical_bias="0.556"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -65,12 +71,13 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="294dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="28dp"
         android:text="new match"
-        app:layout_constraintBottom_toTopOf="@+id/Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -79,19 +86,18 @@
         android:layout_width="294dp"
         android:layout_height="64dp"
         android:text="Settings"
-        app:layout_constraintBottom_toTopOf="@+id/btnSpeak2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.928"
+        app:layout_constraintVertical_bias="0.81"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/mainButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
         android:clickable="true"
         android:focusable="true"
         android:text="meddit"
@@ -100,20 +106,21 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="0.371" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="163dp"
         android:layout_height="282dp"
-        app:layout_constraintBottom_toTopOf="@+id/UpdateProfile"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/meddit_logo"
         tools:ignore="MissingConstraints" />
 

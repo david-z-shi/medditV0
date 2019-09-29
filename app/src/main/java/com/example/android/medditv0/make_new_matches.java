@@ -2,6 +2,7 @@ package com.example.android.medditv0;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class make_new_matches extends AppCompatActivity {
     private Button search;
     private EditText keywords_search;
     private String return_val;
+    private Button back_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +30,22 @@ public class make_new_matches extends AppCompatActivity {
         setContentView(R.layout.make_new_matches);
         search = (Button) findViewById(R.id.search);
         keywords_search = (EditText) findViewById(R.id.keywords_search);
+        back_home = (Button) findViewById(R.id.back_home);
 
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String search_term = keywords_search.getText().toString();
                 String return_val = getMatches(search_term);
+                Intent intent = new Intent(make_new_matches.this, user_matches.class);
+                startActivity(intent);
+            }
+        });
+        back_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(make_new_matches.this, main_menu.class);
+                startActivity(intent);
             }
         });
     }

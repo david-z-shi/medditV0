@@ -7,6 +7,22 @@
     android:background="#ffffff"
     tools:context=".opening_page">
 
+    <ImageButton
+        android:id="@+id/btnSpeak6"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="656dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:cropToPadding="true"
+        android:scaleType="fitStart"
+        android:src="@android:drawable/ic_btn_speak_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/createButton"
         style="@style/Widget.AppCompat.Button.Colored"

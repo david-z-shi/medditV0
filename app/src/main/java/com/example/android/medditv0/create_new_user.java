@@ -21,6 +21,8 @@ public class create_new_user extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.create_new_user);
+
         firstName = (EditText) findViewById(R.id.firstName);
         lastName = (EditText) findViewById(R.id.lastName);
         phone = (EditText) findViewById(R.id.phoneNumber);

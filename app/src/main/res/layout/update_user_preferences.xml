@@ -54,7 +54,8 @@
         android:scaleType="fitStart"
         android:src="@android:drawable/ic_btn_speak_now"
         tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="652dp" />
+        tools:layout_editor_absoluteY="652dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/state"

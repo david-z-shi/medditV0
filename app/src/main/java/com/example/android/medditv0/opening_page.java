@@ -14,13 +14,15 @@ public class opening_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.opening_page);
+
         login = (Button) findViewById(R.id.loginpage);
         createButton = (Button) findViewById(R.id.createButton);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(opening_page.this, login_page.class);
+                Intent intent = new Intent(opening_page.this, text_to_speech.class);
                 startActivity(intent);
             }
         });

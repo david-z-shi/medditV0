@@ -14,6 +14,7 @@ public class login_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.login_page);
         login1 = (Button) findViewById(R.id.login2);
         login1.setOnClickListener(new View.OnClickListener() {
             @Override

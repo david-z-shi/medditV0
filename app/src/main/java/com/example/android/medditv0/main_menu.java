@@ -16,6 +16,8 @@ public class main_menu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.main_menu);
+
         UpdateProfile = (Button) findViewById(R.id.UpdateProfile);
         SavedMatches = (Button) findViewById(R.id.SavedMatches);
         NewMatches = (Button) findViewById(R.id.NewMatches);

@@ -32,7 +32,7 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
     //status check code
     private int MY_DATA_CHECK_CODE = 0;
 
-    private int count = 0;
+    private int count = 1;
 
     private final String welcome = "Welcome to meddit";
     private final String firstQuestion = "Do you want to enter voice entry mode?";
@@ -146,7 +146,6 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
         switch (requestCode) {
             case REQ_CODE_SPEECH_INPUT: {
                 if (resultCode == RESULT_OK && null != data) {
-
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     txtSpeechInput.setText(result.get(0));
@@ -176,6 +175,7 @@ public class text_to_speech extends Activity implements View.OnClickListener, On
                 myTTS.speak("What is your first name?", TextToSpeech.QUEUE_FLUSH, null, null);
                 promptSpeechInput();
                 firstName = txtSpeechInput.getText().toString();
+                confirmNext();
                 if (!confirmNext()) {
                     break;
                 }

@@ -34,16 +34,6 @@
         tools:layout_editor_absoluteX="168dp"
         tools:layout_editor_absoluteY="514dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/back_home"
-        android:layout_width="91dp"
-        android:layout_height="51dp"
-        android:clickable="true"
-        android:src="?attr/actionModeCloseDrawable"
-        app:layout_constraintTop_toTopOf="@+id/appBarLayout2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-1dp" />
-
     <Button
         android:id="@+id/search"
         style="@style/Widget.AppCompat.Button.Colored"

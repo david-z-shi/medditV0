@@ -8,19 +8,6 @@
     tools:context=".text_to_speech">
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton6"
-        android:layout_width="91dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="124dp"
-        android:clickable="true"
-        android:src="?attr/actionModeCloseDrawable"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/appBarLayout2"
-        tools:ignore="MissingConstraints" />
-
     <Button
         android:id="@+id/save"
         style="@style/Widget.AppCompat.Button.Colored"

@@ -34,7 +34,7 @@ public class update_user_preferences extends AppCompatActivity {
         setContentView(R.layout.update_user_preferences);
 
         Bundle bundle = getIntent().getExtras();
-        home = (Button) findViewById(R.id.floatingActionButton6);
+
 
 
         final String firstName = bundle.getString("firstName");
@@ -61,6 +61,7 @@ public class update_user_preferences extends AppCompatActivity {
         final String ct = city.toString();
 
         save = (Button) findViewById(R.id.save);
+        home=(Button) findViewById(R.id.floatingActionButton6);
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,6 +79,8 @@ public class update_user_preferences extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 
     public String createUser(final User new_user) {

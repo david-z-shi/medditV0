@@ -75,15 +75,7 @@
         android:layout_width="108dp"
         android:layout_height="112dp"
 
-    <ImageButton
-        android:id="@+id/imageButton34"
-        android:layout_width="108dp"
-        android:layout_height="112dp"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="231dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="MissingConstraints" />
-        app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"

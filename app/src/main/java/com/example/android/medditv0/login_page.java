@@ -11,13 +11,13 @@ import android.widget.ImageButton;
 public class login_page extends AppCompatActivity {
 
     private Button login1;
-    private ImageButton home;
+    ///private ImageButton home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page);
         login1 = (Button) findViewById(R.id.login2);
-        home = (ImageButton) findViewById(R.id.back_home);
+        //home = (ImageButton) findViewById(R.id.back_home);
         login1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,12 +26,12 @@ public class login_page extends AppCompatActivity {
             }
         });
 
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(login_page.this, opening_page.class);
-                startActivity(intent);
-            }
-        });
+//        home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(login_page.this, opening_page.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }

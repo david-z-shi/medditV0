@@ -20,7 +20,7 @@ public class create_new_user extends AppCompatActivity {
     private Button createAccount;
     private EditText username;
     private EditText password;
-    private ImageButton restart;
+//    private ImageButton restart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class create_new_user extends AppCompatActivity {
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
-        restart = (ImageButton) findViewById(R.id.floatingActionButton4);
+        //restart = (ImageButton) findViewById(R.id.floatingActionButton4);
         createAccount = (Button) findViewById(R.id.createAccount);
 
         createAccount.setOnClickListener(new View.OnClickListener() {
@@ -51,12 +51,12 @@ public class create_new_user extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        restart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(create_new_user.this, opening_page.class);
-                startActivity(intent);
-            }
-        });
+//        restart.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(create_new_user.this, opening_page.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }

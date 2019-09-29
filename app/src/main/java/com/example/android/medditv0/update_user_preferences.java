@@ -25,7 +25,7 @@ public class update_user_preferences extends AppCompatActivity {
     private EditText age;
     private EditText profile;
     private Button save;
-    private Button home;
+    //private Button home;
     private String responseMessage;
 
     @Override
@@ -61,7 +61,7 @@ public class update_user_preferences extends AppCompatActivity {
         final String ct = city.toString();
 
         save = (Button) findViewById(R.id.save);
-        home=(Button) findViewById(R.id.floatingActionButton6);
+        //home=(Button) findViewById(R.id.floatingActionButton6);
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,13 +72,13 @@ public class update_user_preferences extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(update_user_preferences.this, main_menu.class);
-                startActivity(intent);
-            }
-        });
+//        home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(update_user_preferences.this, main_menu.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
     }

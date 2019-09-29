@@ -15,7 +15,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class user_profile extends AppCompatActivity {
-    private ImageButton home;
+    //private ImageButton home;
 
 
     @Override
@@ -23,13 +23,13 @@ public class user_profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.individual_profile);
 
-        home = (ImageButton) findViewById(R.id.floatingActionButton2);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(user_profile.this, main_menu.class);
-                startActivity(intent);
-            }
-        });
+//        home = (ImageButton) findViewById(R.id.floatingActionButton2);
+//        home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(user_profile.this, main_menu.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }

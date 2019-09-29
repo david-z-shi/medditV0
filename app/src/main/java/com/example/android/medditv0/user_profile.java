@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -14,7 +15,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class user_profile extends AppCompatActivity {
-    private Button home;
+    private ImageButton home;
 
 
     @Override
@@ -22,7 +23,7 @@ public class user_profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.individual_profile);
 
-        home = (Button) findViewById(R.id.floatingActionButton2);
+        home = (ImageButton) findViewById(R.id.floatingActionButton2);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

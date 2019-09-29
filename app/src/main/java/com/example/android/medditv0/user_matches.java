@@ -22,6 +22,7 @@ public class user_matches extends AppCompatActivity {
     private ImageButton user_match3;
     private ImageButton user_match4;
     private ImageButton user_match5;
+    private Button home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +32,7 @@ public class user_matches extends AppCompatActivity {
         user_match3 = (ImageButton) findViewById(R.id.imageButton33);
         user_match4 = (ImageButton) findViewById(R.id.imageButton28);
         user_match5 = (ImageButton) findViewById(R.id.imageButton35);
-
+        home = (Button) findViewById(R.id.floatingActionButton5);
         user_match1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +66,13 @@ public class user_matches extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(user_matches.this, user_profile.class);
+                startActivity(intent);
+            }
+        });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(user_matches.this, main_menu.class);
                 startActivity(intent);
             }
         });

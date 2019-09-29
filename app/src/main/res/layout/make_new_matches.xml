@@ -46,12 +46,13 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="193dp"
         android:layout_height="64dp"
+        android:layout_marginTop="24dp"
         android:background="#D81B60"
         android:text="match me!"
         android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@+id/keywords_search"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="436dp" />
+        tools:layout_editor_absoluteX="109dp" />
 
     <EditText
         android:id="@+id/keywords_search"
